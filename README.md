@@ -5,13 +5,13 @@ Este repositório contém implementações de pilha, fila, merge de filas e merg
 ## Arquivos do Projeto
 
 1. **No.java** - Classe nó da lista encadeada, usada por pilha e fila.
-2. **Pilha.java** - Implementa pilha (LIFO) com métodos de inserção, remoção e impressão.
-3. **Fila.java** - Implementa fila (FIFO) com métodos de inserção, remoção e impressão.
+2. **Pilha.java** - Implementa pilha com métodos insere, remove e imprime.
+3. **Fila.java** - Implementa fila com métodos de insere, remove e imprime.
 4. **MergeVetor.java** - Funções para mesclar dois vetores ordenados em um novo vetor ordenado.
 5. **MergeListaEncadeada.java** - Função para mesclar duas filas ordenadas em uma nova fila ordenada.
-6. **Main.java** - Testa e demonstra todas as estruturas.
+6. **Main.java** - Testa e demonstra as estruturas.
 
-## Como executar
+## Como rodar o projeto
 
 1. Abra o terminal na pasta do projeto.  
 2. ```bash
