@@ -1,16 +1,36 @@
 public class Main{
     public static void main(String[] args){
+        //pilha
         Pilha pilha = new Pilha();
         pilha.insere(10);
         pilha.insere(20);
         pilha.insere(30);
 
+        System.out.println("Pilha inicial");
         pilha.imprime();
+        System.out.println();
 
         pilha.remove();
+        System.out.println("Pilha após remover o último elemento:");
         pilha.imprime();
+        System.out.println();
 
         //fila
+        Fila fila = new Fila();
+        fila.insereUltimo(10);
+        fila.insereUltimo(20);
+        fila.insereUltimo(30);
+
+        System.out.println("Fila inicial:");
+        fila.imprime();
+        System.out.println();
+
+        fila.removePrimeiro();
+        System.out.println("Fila após remover o primeiro elemento:");
+        fila.imprime();
+        System.out.println();
+
+        //merge fila
         Fila filaA = new Fila();
         Fila filaB = new Fila();
 
@@ -27,6 +47,7 @@ public class Main{
 
         System.out.println("\nFila A:");
         filaA.imprime();
+        System.out.println();
         System.out.println("Fila B:");
         filaB.imprime();
 
@@ -55,7 +76,7 @@ public class Main{
 
         System.out.println("\nVetor A:");
         MergeVetor.imprimeVetor(vetorA, tamanhoA);
-
+        System.out.println();
         System.out.println("Vetor B:");
         MergeVetor.imprimeVetor(vetorB, tamanhoB);
 
