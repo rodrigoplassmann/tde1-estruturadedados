@@ -19,9 +19,26 @@ public class Pilha {
     public int remove(){
         if(vazia()){
             System.out.println("Pilha vazia");
+            return -1;
         }
-        int valor = topo.getInformacao();
-        topo = topo.getProximo();
-        return valor;
+        else{
+            int valor = topo.getInformacao();
+            topo = topo.getProximo();
+            return valor;
+        }
+    }
+
+    public void imprime(){
+        if(vazia()){
+            System.out.println("Pilha está vazia");
+        }
+        else{
+            No atual = topo;
+            while(atual != null){
+                System.out.print(atual.getInformacao() + " -> ");
+                atual = atual.getProximo();
+            }
+            System.out.println("null");
+        }
     }
 }
